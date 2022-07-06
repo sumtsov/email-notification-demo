@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
+    port: 587
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+app:
+  email:
+    recipients: ${EMAIL_RECIPIENTS}
+    from: ${EMAIL_USERNAME}
